@@ -1,0 +1,51 @@
+[{
+"firstName": "Иван",
+"lastName": "Иванов",
+"address": "г.Москва, ул. Алиева,2",
+"phoneNumber": "812 123-1234"
+}, {
+"firstName": "Леонид",
+"lastName": "Леонидов",
+"address": "г.Киров, ул. Революции,34",
+"phoneNumber": "612 435-4567"
+}, {
+"firstName": "Андрей",
+"lastName": "Андреев",
+"address": "г.Черкесск, ул. Ленина,54",
+"phoneNumber": "512 435-4567"
+}, {
+"firstName": "Ринат",
+"lastName": "Ринатов",
+"address": "г.Реутов, ул. Революции,76",
+"phoneNumber": "212 435-4567"
+}, {
+"firstName": "Сергей",
+"lastName": "Сергеев",
+"address": "г.Москва, ул. Сталина,3",
+"phoneNumber": "412 435-4567"
+}, {
+"firstName": "Максим",
+"lastName": "Максимов",
+"address": "г.Нижневартовск, ул. Революции,6",
+"phoneNumber": "212 435-4567"
+}, {
+"firstName": "Петр",
+"lastName": "Петров",
+"address": "г.Нижний Новгород, ул. Ленина,99",
+"phoneNumber": "800 123-0987"
+}, {
+"firstName": "Ирина",
+"lastName": "Иринова",
+"address": "г.Тула, ул. Советская,72",
+"phoneNumber": "802 678-1234"
+}, {
+"firstName": "Лариса",
+"lastName": "Ларисова",
+"address": "г.Москва, ул. Чертановская,182",
+"phoneNumber": "495 123-1234"
+}, {
+ "firstName": "Марина",
+ "lastName": "Маринова",
+ "address": "г.Вязники, ул. Лесная,2",
+ "phoneNumber": "82 123-1234"
+}]

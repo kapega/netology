@@ -1,6 +1,6 @@
 <?php
-$city = 'Moscow';
-$country = 'RU';
+$city = 'Barcelona';
+$country = 'es';
 $url = "http://api.openweathermap.org/data/2.5/weather?appid=652331e6244c72134cb084f0f587852d&q=".$city.','.$country."&units=metric"; 
 $json=file_get_contents($url); 
 $weather=json_decode($json,true);

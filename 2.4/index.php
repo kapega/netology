@@ -76,7 +76,19 @@ endif; ?>
                                 <input class="form-control" placeholder="Пароль" name="password" type="password"
                                        value="" required>
                             </div>
+							<input class="input" type="text" name="norobot" />
+		                    <img src="captcha.php" />
+							
                             <input class="btn btn-lg btn-success btn-block" type="submit" value="Вход">
+							<?php if (!empty($_POST['norobot'])
+								
+								md5($_POST['norobot']) == $_SESSION['randomnr2'])	{ 
+		
+			echo "Отлично , кажется, что вы не робот";
+	}	else {  
+		
+			echo "вы весьма надоедливый бот!";
+	}?>
                         </fieldset>
                     </form>
 					<h1>Войти как гость</h1>

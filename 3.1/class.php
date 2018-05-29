@@ -10,7 +10,7 @@ class Car
     public $color = 'white';
     private $discount;
     
-	public function __construct($name, $price, $color, $discount)
+    public function __construct($name, $price, $color, $discount)
     {
         $this->name = $name;
         $this->price = $price;
@@ -42,7 +42,7 @@ class TV
     private $price;
     public $color = 'black';
     private $discount;
-	
+    
     public function __construct($name, $price, $color, $discount)
     {
         $this->name = $name;
@@ -75,7 +75,7 @@ class Pen
     private $price;
     public $color = 'blue';
     public $discount;
-	
+    
     public function __construct($name, $price, $color, $discount)
     {
         $this->name = $name;
@@ -108,7 +108,7 @@ class Duck
     private $price;
     public $color = 'white';
     private $discount;
-	
+    
     public function __construct($name, $price, $color, $discount)
     {
         $this->name = $name;
@@ -141,7 +141,7 @@ class Product
     private $price;
     public $color = 'white';
     private $discount;
-	
+    
     public function __construct($name, $price, $color, $discount)
     {
         $this->name = $name;
@@ -189,59 +189,59 @@ class Product
     </head>
 <body class="vsc-initialized">
     <div style="text-align:center" class="container">
-		<div>
-		    <h1><?php echo Car::CATEGORY; ?></h1>
+        <div>
+            <h1><?php echo Car::CATEGORY; ?></h1>
 <?php
 $audi = new Car('Audi Q5', 2980000, 'red', 10);
 $renault = new Car('Renault Logan', 500000, 'blue', 0); 
 ?>
-			<p>Today you can buy <?php echo $audi->color . ' ' . $audi->name; ?> for only <?php echo $audi->getprice(); ?> roubles.</p>
-			<p>Also <?php echo $renault->color . ' ' . $renault->name; ?> is available for <?php echo $renault->getprice(); ?> roubles.</p>
-		</div>
+            <p>Today you can buy <?php echo $audi->color . ' ' . $audi->name; ?> for only <?php echo $audi->getprice(); ?> roubles.</p>
+            <p>Also <?php echo $renault->color . ' ' . $renault->name; ?> is available for <?php echo $renault->getprice(); ?> roubles.</p>
+        </div>
 
-		<div>
-			<h1><?php echo TV::CATEGORY; ?></h1>
+        <div>
+            <h1><?php echo TV::CATEGORY; ?></h1>
 <?php 
 $lg = new TV('LG OLED', 100000, 'black', 13);
 $samsung = new TV('Samsung SMART', 120000, 'black', 21); ?>
-			<ul style="list-style-type:none">Today we have discounts on the following models:
-				<li><?php echo $lg->name; ?> is on sale for <?php echo $lg->getprice(); ?> roubles.</li>
-				<li><?php echo $samsung->name; ?> costs <?php echo $samsung->getprice(); ?> roubles.</li>
-			</ul>
-		</div>
+            <ul style="list-style-type:none">Today we have discounts on the following models:
+                <li><?php echo $lg->name; ?> is on sale for <?php echo $lg->getprice(); ?> roubles.</li>
+                <li><?php echo $samsung->name; ?> costs <?php echo $samsung->getprice(); ?> roubles.</li>
+            </ul>
+        </div>
 
-		<div>
-			<h1><?php echo Pen::CATEGORY; ?></h1>
+        <div>
+            <h1><?php echo Pen::CATEGORY; ?></h1>
 <?php
 $brunoVisconti = new Pen('Bruno Visconti', 100, 'black', 55);
 $erichKrause = new Pen('Erich Krause', 90, 'red', 4); 
 ?>
-			<p>Long awaited sale is starting tomorow!</p>
-			<p>Awesome <?php echo $brunoVisconti->color . ' ' . $brunoVisconti->name; ?> with a discount <?php echo $brunoVisconti->discount; ?>%.</p>
-			<p>Your favorite <?php echo $erichKrause->color . ' ' . $erichKrause->name; ?> with a discount <?php echo $erichKrause->discount; ?>%.</p>
-		</div>
+            <p>Long awaited sale is starting tomorow!</p>
+            <p>Awesome <?php echo $brunoVisconti->color . ' ' . $brunoVisconti->name; ?> with a discount <?php echo $brunoVisconti->discount; ?>%.</p>
+            <p>Your favorite <?php echo $erichKrause->color . ' ' . $erichKrause->name; ?> with a discount <?php echo $erichKrause->discount; ?>%.</p>
+        </div>
 
-		<div>
-			<h1><?php echo Duck::CATEGORY; ?></h1>
+        <div>
+            <h1><?php echo Duck::CATEGORY; ?></h1>
 <?php
 $pekin = new Duck('Pekin', 3000, 'white', 5);
 $сayuga = new Duck('Сayuga', 4000, 'green', 4); 
 ?>
-			<p>Start breeding ducks today!</p>
-			<p>Wonderful <?php echo $pekin->color . ' ' . $pekin->name; ?> duck with a discount for <?php echo $pekin->getprice(); ?> roubles.</p>
-			<p>Cute <?php echo $сayuga->color . ' ' . $сayuga->name; ?> for only <?php echo $сayuga->getprice(); ?> roubles.</p>
-		</div>
+            <p>Start breeding ducks today!</p>
+            <p>Wonderful <?php echo $pekin->color . ' ' . $pekin->name; ?> duck with a discount for <?php echo $pekin->getprice(); ?> roubles.</p>
+            <p>Cute <?php echo $сayuga->color . ' ' . $сayuga->name; ?> for only <?php echo $сayuga->getprice(); ?> roubles.</p>
+        </div>
 
-		<div>
-			<h1><?php echo Product::CATEGORY; ?></h1>
+        <div>
+            <h1><?php echo Product::CATEGORY; ?></h1>
 <?php
 $tea = new Product('Lipton', 100, 'black', 55);
 $coffee = new Product('Nescafe', 150, 'green', 4); 
 ?>
-		<p>For tea and coffee lovers!</p>
-			<p>Tea <?php echo $tea->color . ' ' . $tea->name; ?> for <?php echo $tea->getprice(); ?> roubles.</p>
-			<p>Coffee <?php echo $coffee->color . ' ' . $coffee->name; ?> for <?php echo $coffee->getprice(); ?> roubles.</p>
-		</div>
-	</div>
+        <p>For tea and coffee lovers!</p>
+            <p>Tea <?php echo $tea->color . ' ' . $tea->name; ?> for <?php echo $tea->getprice(); ?> roubles.</p>
+            <p>Coffee <?php echo $coffee->color . ' ' . $coffee->name; ?> for <?php echo $coffee->getprice(); ?> roubles.</p>
+        </div>
+    </div>
 </body>
 </html>

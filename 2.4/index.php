@@ -80,9 +80,7 @@ endif; ?>
 		                    <img src="captcha.php" />
 							
                             <input class="btn btn-lg btn-success btn-block" type="submit" value="Вход">
-							<?php if (!empty($_POST['norobot'])
-								
-								md5($_POST['norobot']) == $_SESSION['randomnr2'])	{ 
+							<?php if (isset($_POST['norobot']) && md5($_POST['norobot']) == $_SESSION['randomnr2']) {
 		
 			echo "Отлично , кажется, что вы не робот";
 	}	else {  

@@ -2,6 +2,10 @@
 
 require_once 'functions.php';
 
+if (!isAdmin()) {
+    header($_SERVER['SERVER_PROTOCOL'] . ' 403 Forbidden');
+	die('403 Forbidden');
+}
 //var_dump($_SESSION);
 //var_dump($_POST);
 ?>
@@ -30,8 +34,8 @@ require_once 'functions.php';
         <div class="container">
             <h1>Тесты</h1>
             <?php
-	$tests_file = file_get_contents('tests.json');
-	$json = json_decode($tests_file, true); // из файла json получаем структуры php
+	$tests_file = file_get_contents('tests.json') or exit('Не удалось получить данные');
+	$json = json_decode($tests_file, true) or exit('Ошибка декодирования json'); // из файла json получаем структуры php
 	foreach ($json as $index => $test) {
 		echo "<p><a href='test.php?test={$index}'>{$test['test_name']}</a></p>";
 		if (isAuthorized() && isAdmin()) {

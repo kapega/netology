@@ -49,3 +49,10 @@ function isAuthorized() {
 function isAdmin() {
 	return isAuthorized() && $_SESSION['user']['is_admin'];
 }
+
+
+function redirect($to)
+{
+    header("Location: $to");
+    die();
+}

@@ -1,8 +1,8 @@
 <?php 
 require_once 'functions.php';
-if (!isAuthorizedUser())
+if (!isAdmin())
 {
-    redirect403('index.php');
+    redirect('index.php');
 }
 //print_r($_GET);
 if(isset($_GET['test']))

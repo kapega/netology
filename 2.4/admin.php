@@ -2,9 +2,8 @@
 require_once 'functions.php';
 
 if (!isAdmin()) {
-    header($_SERVER['SERVER_PROTOCOL'] . '403 Access denied');
-    // echo 'Доступ запрещен';
-    die;
+    header($_SERVER['SERVER_PROTOCOL'] . ' 403 Forbidden');
+	die('403 Forbidden');
 }
 
 ?>
@@ -49,15 +48,6 @@ if (!isAdmin()) {
 				</div>
                 <input type="submit" class="btn btn-lg btn-success" value="Отправить тест"><br /><br />
                 <?php
-
-function redirect($to)
-{
-
-    // header('HTTP/1.0 302 Moved Permanently');
-
-    header("Location: $to");
-    die();
-}
 
 if (count($_FILES) > 0) {
     try {

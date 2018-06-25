@@ -3,11 +3,17 @@
 require_once 'functions.php';
 //var_dump($_SESSION);
 //var_dump($_POST);
+if (!isAdmin()) {
+    header($_SERVER['SERVER_PROTOCOL'] . ' 403 Forbidden');
+	die('403 Forbidden');
+}
+
 if (isAuthorized()) {
 	$_POST['name'] = $_SESSION['user']['username'];
 }
 
 $n = $_SESSION['user']['username'];
+
 
 
 ?>

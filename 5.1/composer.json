@@ -1,0 +1,12 @@
+{
+    "name": "eborodina/composer",
+    "authors": [
+        {
+            "name": "Kate Borodina",
+            "email": "kapega@yandex.ru"
+        }
+    ],
+    "require": {
+	"yandex/geo": "1.1"
+	}
+}
